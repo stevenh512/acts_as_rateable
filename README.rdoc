@@ -16,26 +16,15 @@ The original plugin is used on cotcot.hu for article rating, sponsored quizzes, 
 
 = Installation
 
-== Install as gem (recommended)
-
-Install as a gem:
-
-    $ sudo gem install mreinsch-acts_as_rateable
-
-Then add the gem dependency in your config:
-
-    # config/environment.rb
-    config.gem "mreinsch-acts_as_rateable", :source => "http://gems.github.com", :lib => "acts_as_rateable"
-
 == Install as plugin
 
 To install as a plugin, use:
 
-    $ ./script/plugin install git://github.com/mreinsch/acts_as_rateable.git
+    $ rails plugin install git://github.com/josei/acts_as_rateable.git
 
 = Example Usage
 
-Install the plugin into your vendor/plugins directory, insert 'acts_as_rateable' into your model, then restart your application.
+Install the plugin, insert 'acts_as_rateable' into your model, then restart your application.
 
     class Post < ActiveRecord::Base
       acts_as_rateable
