@@ -1,5 +1,7 @@
 = Acts As Rateble
 
+Rails 3 ready.
+
 Acts_as_rateable is a rails plugin providing a rating interface for ActiveRecord models. 
 It is released under the MIT license. 
 The original plugin is used on cotcot.hu for article rating, sponsored quizzes, etc.
