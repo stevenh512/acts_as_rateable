@@ -1,1 +1,2 @@
-require File.dirname(__FILE__) + "/rails/init.rb"
+require 'acts_as_rateable'
+ActiveRecord::Base.send(:include, ActiveRecord::Acts::Rateable)
