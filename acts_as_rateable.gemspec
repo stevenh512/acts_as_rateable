@@ -8,18 +8,11 @@ Gem::Specification.new do |s|
   s.description = "Acts_as_rateable is a rails plugin providing a rating interface for ActiveRecord models."
   s.has_rdoc = true
   s.authors  = ["Ferenc Fekete", "Gabriel Gironda", "Michael Reinsch", "José Ignacio Fernández"]
-  s.files    = ["README.rdoc",
-                "CHANGELOG.rdoc",
-                "MIT-LICENSE",
-                "Rakefile",
-                "init.rb",
-                "rails/init.rb",
-                "lib/rating.rb",
-                "lib/user_rating.rb",
-                "lib/acts_as_rateable.rb",
-                "generators/acts_as_rateable_migration/templates/migration.rb",
-                "generators/acts_as_rateable_migration/acts_as_rateable_migration_generator.rb"]
   s.rdoc_options = ["--main", "README.rdoc"]
   s.extra_rdoc_files = ["README.rdoc", "CHANGELOG.rdoc", "MIT-LICENSE"]
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 end
 
